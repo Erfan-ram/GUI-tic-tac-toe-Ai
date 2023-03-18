@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QWidget, QPushButton, QApplication, QLabel, QLCDNumb
 from PyQt5.QtCore import QRect, QSize, QTime, QTimer
 from PyQt5.QtGui import QFont
 from random import sample, choice
-from moudle_new import Minimax
+from Ai_module import Minimax
 
 
 class Ui_Form(QWidget):

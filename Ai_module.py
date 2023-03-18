@@ -1,5 +1,3 @@
-# in the name of ALLAH
-
 class Minimax:
     def __init__(self, bot, opponet):
 
