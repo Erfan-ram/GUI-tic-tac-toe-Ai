@@ -260,7 +260,7 @@ class Ui_Form(QWidget):
 
     def lead_round(self, whose_turn):
         self.label.setText(choice(
-            ["Dont give up", "You can do it", "Tecnial move", "Great", "You are the best"])+" !!")
+            ["Dont give up", "You can do it", "Tecnial move", "Great", "You are the best"])+f" {self.GenEmoji()}  !!")
         self.check_winner()
 
         is_left = self.minimax.generate_2d(self.p)
@@ -271,6 +271,10 @@ class Ui_Form(QWidget):
 
         if whose_turn == self.bot:
             self.bot_execution()
+
+    def GenEmoji(self) -> str:
+
+        return chr(choice(range(0x1F600, 0x1F638)))
 
     def check_winner(self):
         yellow = "background-color:yellow"
